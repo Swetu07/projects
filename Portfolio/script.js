@@ -197,3 +197,48 @@ const observer = new IntersectionObserver(
 revealElements.forEach((element) => {
     observer.observe(element);
 });
+/* =========================================================
+   CONTACT INFORMATION
+========================================================= */
+
+const emailButton = document.getElementById("emailButton");
+const phoneButton = document.getElementById("phoneButton");
+
+const emailInfo = document.getElementById("emailInfo");
+const phoneInfo = document.getElementById("phoneInfo");
+
+
+/* Show email */
+
+if (emailButton && emailInfo) {
+
+    emailButton.addEventListener("click", function () {
+
+        emailInfo.classList.toggle("show");
+
+        // Hide phone information
+        if (phoneInfo) {
+            phoneInfo.classList.remove("show");
+        }
+
+    });
+
+}
+
+
+/* Show phone */
+
+if (phoneButton && phoneInfo) {
+
+    phoneButton.addEventListener("click", function () {
+
+        phoneInfo.classList.toggle("show");
+
+        // Hide email information
+        if (emailInfo) {
+            emailInfo.classList.remove("show");
+        }
+
+    });
+
+}

@@ -75,14 +75,16 @@ nav > a {
     font-size: 1.4rem;
     font-weight: 700;
 
-    /* Gradient name */
     background: linear-gradient(
         90deg,
         #6ea8ff,
         #a78bfa
     );
 
+    background-clip: text;
     -webkit-background-clip: text;
+
+    color: transparent;
     -webkit-text-fill-color: transparent;
 }
 
@@ -170,9 +172,7 @@ nav ul a.active {
 
 #home h1 {
     font-size: clamp(3rem, 7vw, 6rem);
-
     line-height: 1;
-
     margin-bottom: 25px;
 
     background: linear-gradient(
@@ -181,7 +181,10 @@ nav ul a.active {
         #8b9cff
     );
 
+    background-clip: text;
     -webkit-background-clip: text;
+
+    color: transparent;
     -webkit-text-fill-color: transparent;
 }
 
